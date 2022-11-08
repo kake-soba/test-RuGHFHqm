@@ -12,4 +12,4 @@ jobs:
   say2_job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "say2. ( ^o^)<${{ github.event.inputs.say_input }}"
+      - run: echo "say2. ( ^o^)<${{ github.event.inputs.say2_input }}"
