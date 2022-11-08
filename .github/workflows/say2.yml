@@ -3,7 +3,7 @@ name: say2
 on:
   workflow_dispatch:
     inputs:
-      say2_input:
+      say_input:
         description: ''
         required: true
         default: 'Hello!!'
@@ -12,4 +12,4 @@ jobs:
   say2_job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "say2. ( ^o^)<${{ github.event.inputs.say2_input }}"
+      - run: echo "say2. ( ^o^)<${{ github.event.inputs.say_input }}"
