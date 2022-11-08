@@ -1,8 +1,0 @@
-name: test-github-actions
-on: [push]
-jobs:
-  checkout-bats-version:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Github Actions!!"
-
