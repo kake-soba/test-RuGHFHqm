@@ -6,10 +6,10 @@ on:
       word:
         description: ''
         required: true
-        default: 'World.'
+        default: 'World'
 
 jobs:
   say_job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello. ${{ github.event.inputs.word }}"
+      - run: echo "Hello, ${{ github.event.inputs.word }}."
