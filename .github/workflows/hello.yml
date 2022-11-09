@@ -9,7 +9,7 @@ on:
         default: 'World'
 
 jobs:
-  say_job:
+  hello:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello, ${{ github.event.inputs.word }}."
