@@ -1,0 +1,15 @@
+name: hello
+
+on:
+  workflow_dispatch:
+    inputs:
+      word:
+        description: ''
+        required: true
+        default: 'World.'
+
+jobs:
+  say_job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello. ${{ github.event.inputs.word }}"
